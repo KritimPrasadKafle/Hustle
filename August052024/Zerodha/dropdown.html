@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      /* Display items in a row */
+    }
+
+    .navbar li {
+      margin: 0 15px;
+      /* Spacing between items */
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: block;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .dots-menu {
+      display: none;
+      /* Hidden by default */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+    }
+
+    .dots-menu:hover {
+      color: #ccc;
+    }
+
+    .dropdown-menu {
+      display: none;
+      /* Hidden by default */
+      position: absolute;
+      top: 50px;
+      /* Adjust as needed */
+      right: 10px;
+      background-color: #333;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    .dropdown-menu a {
+      padding: 10px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #575757;
+    }
+
+    /* Media Query for Smaller Screens */
+    @media (max-width: 768px) {
+      .navbar ul {
+        display: none;
+        /* Hide the navbar items */
+      }
+
+      .dots-menu {
+        display: block;
+        /* Show the dots menu */
+      }
+
+      .dropdown-menu.show {
+        display: block;
+        /* Show dropdown menu when active */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/">Signup</a></li>
+      <li><a href="/">About</a></li>
+      <li><a href="/">Products</a></li>
+      <li><a href="/">Pricing</a></li>
+      <li><a href="/">Support</a></li>
+    </ul>
+    <div class="dots-menu" id="dotsMenu">
+      &#8226; &#8226; &#8226; <!-- Unicode for dots -->
+    </div>
+    <div class="dropdown-menu" id="dropdownMenu">
+      <a href="/">Signup</a>
+      <a href="/">About</a>
+      <a href="/">Products</a>
+      <a href="/">Pricing</a>
+      <a href="/">Support</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('dotsMenu').addEventListener('click', function () {
+      var dropdown = document.getElementById('dropdownMenu');
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      } else {
+        dropdown.classList.add('show');
+      }
+    });
+  </script>
+</body>
+
+</html>
