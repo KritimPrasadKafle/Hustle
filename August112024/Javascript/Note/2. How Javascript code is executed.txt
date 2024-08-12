@@ -1,0 +1,28 @@
+1. Whenever any JavaScript code is executed an execution context is created and it is the Global Execution Context.
+2. An Execution Context is basically a box which has two components called Memory Component(Variable Environment) and Code Component(Thread Of Execution).
+3. The Execution context is created in two phases
+   a. Memory Creation Phase : In this Phase, Memory is allocated to all the variables and functions which are present in the           global scope. Special keyword Undefined in case of variables and literally the whole function in case of functions.
+   b. Code Execution Phase : In this Phase, code is executed line by line.
+
+4. Whenever there is a function invocation an all new execution context is created and same process is followed again.
+5. If there is any function parameter then it is also allocated memory while creating the execution context of the function.
+6. Whenever return keyword is encountered , it means the task of function is over and it returns back the control of the program back to the place where it was invoked. and with this this execution context is deleted from stack.
+
+7. Call Stack is basically a stack which maintains the order of execution of execution context. Whenever a code is executed the Global Execution Context is pushed into the stack first and later on as per the function invocation the  execution context is pushed into the stack. When the function code is done executing the execution context is popped out and last the Global Execution Context s also deleted.
+
+
+
+
+
+
+
+
+
+
+1. When JavaScript code is executed, Execution Context is created and it is called Global Execution Context.
+2. JavaScript program is executed in TWO PHASES inside Execution Context
+  a. MEMORY ALLOCATION PHASE - JavaScript program goes throughout the program and allocate memory of Variables and Functions declared in program.
+  b. CODE EXECUTION PHASE -  JavaScript program now goes throughout the code line by line and execute the code. 
+3. A Function is invoked when it is called and it acts as another MINI PROGRAM and creates its own Execution Context.
+4. Returns keyword return the Control back to the PREVIOUS Execution-Context where the Function is called and Execution Context of the Function is DELETED.
+5. CALL STACK maintains the ORDER of execution of Execution Contexts. It CREATES Execution Context whenever a Program starts or a Function is invoked and it pops out the Execution Context when a Function or Program ENDS.

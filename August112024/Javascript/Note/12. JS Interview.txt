@@ -1,0 +1,126 @@
+1. An inner function can be directly called using two parenthesis ()().
+2. Even parameters can be passed this way (Remember that the function needs to be returned to do this)
+3. Closures can also be used for data hiding and encapsulation. So other code cannot access this value.
+4. Unused variables are automatically deleted in High Level Programming language by garbage collector. Closures allocate a lot of memory which cannot be deleted so this acts as a disadvantage.
+5. Some browsers now have smart garbage collectors that automatically deletes variables that are not used outside closures.
+
+
+
+
+
+ //closure
+    // function outest() {
+    //   var c = 20;
+    //   function outer(b) {
+
+    //     function inner() {
+    //       console.log(a, b, c);
+
+    //     }
+    //     let a = 10;
+    //     return inner;
+    //   }
+    //   return outer;
+    // }
+
+    // let a = 100;
+
+    // var close = outest()("helloworld");
+    // close();
+
+
+    //Data hiding
+
+
+    // function counter() {
+    //   var count = 0;
+    //   return function increment() {
+    //     count++;
+    //     console.log(count);
+
+    //   }
+    // }
+
+    // // console.log(counter);
+
+    // var counter1 = counter()
+    // counter1();
+    // counter1();
+
+    // var counter2 = counter();
+    // counter2();
+
+    //function constructor
+
+
+    // function Count() {
+    //   var count = 0;
+    //   this.incrementCounter = function () {
+    //     count++;
+    //     console.log(count);
+    //   }
+    //   this.decrementCounter = function () {
+    //     count--;
+    //     console.log(count);
+    //   }
+    // }
+    // var counter1 = new Count();
+
+    // counter1.incrementCounter();
+
+
+
+    //Garbage collector and closure relation
+    function a() {
+      var x = 0;
+      return function b() {
+        console.log(x);
+      }
+    }
+
+    var y = a();
+
+    y();
+
+
+
+
+
+
+
+
+
+
+
+// function x() {
+//   var a = 7;
+//   function y() {
+//     console.log(a);
+//   }
+//   y();
+// }
+// x();
+
+
+// function x() {
+//   var i = 1;
+//   setTimeout(function () {
+//     console.log(i);
+//   }, 1000);
+//   console.log("hello");
+
+// }
+// x();
+
+
+function outer() {
+  var a = 10;
+  function inner() {
+    console.log(a);
+
+  }
+  let a = 10;
+  return inner;
+}
+
+outer()();

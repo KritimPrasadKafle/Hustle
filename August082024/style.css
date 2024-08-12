@@ -1,0 +1,190 @@
+body {
+  background-color: black;
+}
+
+.devs a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+.devs {
+  margin-left: 70px;
+  color: white;
+  margin-top: 55px;
+}
+.head-container {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 18px;
+  color: white;
+  font-weight: 300;
+  font-size: 19px;
+  padding-top: 20px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+.navbar ul {
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 40px;
+  width: 320px;
+  height: 60px;
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li a:hover {
+  color: blue; /* Changes text color on hover */
+  text-decoration: underline; /* Adds underline on hover */
+}
+.login {
+  border: 2px solid black;
+  background-color: rgb(29, 28, 28);
+  color: white;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 100px;
+  height: 60px;
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.login:hover {
+  border: 1px solid white;
+}
+
+.book {
+  color: white;
+  text-align: center;
+
+  border: 1px dashed cornflowerblue;
+  border-radius: 20px;
+  width: 300px;
+  height: 35px;
+  margin-left: 60px;
+}
+/* .book:hover {
+  cursor: pointer;
+}
+.start {
+  color: white;
+
+  margin-top: 50px;
+
+  margin-left: 320px;
+  font-size: 60px;
+} */
+
+.mainone {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mainone h3 {
+  color: rgb(29, 28, 28);
+}
+.courses {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: #4d67e4;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.photo {
+  margin-top: 70px;
+}
+
+.rotating-text {
+  display: inline-block; /* Allows transformation effects to be applied */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #3498db; /* Text color */
+  font-weight: bold; /* Makes text bold */
+  padding: 20px; /* Adds some padding around the text */
+
+  /* Apply the rotation animation */
+  animation: rotate 10s linear infinite; /* 10s duration, linear timing, infinite loop */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); /* Starting rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Ending rotation */
+  }
+}
+
+.learn {
+  margin-top: 70px;
+}
+#imagecourse {
+  width: 35vw;
+  height: auto;
+  margin-left: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.cart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+  width: 100px;
+  height: 200px;
+  align-items: center;
+}
+.buy {
+  position: relative;
+  top: 200px;
+  right: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 200px;
+  /* Increased width */
+  /* Set the desired width */
+  height: 40px;
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+.buy:hover {
+  background-color: #2980b9; /* Darker background color */
+  border-color: #ffffff; /* Border color change */
+}
+
+.footerdev {
+  margin-left: 50px;
+}
+.footer {
+  display: flex;
+  color: white;
+  margin-top: 300px;
+  background-color: rosybrown;
+}
+.footer h4 {
+  width: 200px;
+  margin-left: 50px;
+}
+.footer span {
+  margin-top: 20px;
+}
+.get {
+  margin-left: 600px;
+}
+.app {
+  margin-left: 400px;
+}

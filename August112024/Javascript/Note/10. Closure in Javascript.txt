@@ -1,0 +1,41 @@
+Closure :Function bundled with its lexical environment is known as a closure. Whenever function is returned, even if its vanished in execution context but still it remembers the reference it was pointing to. Its not just that function alone it returns but the entire closure and that's where it becomes interesting !!
+
+
+
+
+Q)What is closure?
+A)The function bundled with its lexical environment closed to that function
+simply function + Lexical environment
+
+and closures have very special place in runtime environment
+
+The fun in JavaScript is you can assign a variable for a function and also you can pass function as a parameter even you can return the function in JavaScript!!
+
+Myself : https://www.youtube.com/watch?v=74hA6Q7vPI4
+
+
+Q)What does the closure do in my JavaScript programs?
+A) Whenever I call a function in JavaScript the closure maintains its values(lexical env.) and function in its own runtime and when that specific function executed, it returns with own environment even the variable vanished after its execution
+
+11:36 : Simaran! because is on Diet
+
+
+13:54 : as variable value is changed before executing the return (the function) Value will be 100
+
+In closures, values in variable are 'pass by reference' hence there values can be changed, and whenever comes the closure inside closure(multilevel one) we can see the function refers the 'parent' variable 
+
+
+
+
+
+
+
+
+
+
+
+
+1. Function bundled with lexical scope is called closure.
+2. Even if we return the function, it still remembers its original lexical environment and local storage so it can access values.
+3. If we write return function x(){.....} --- this automatically returns the value.
+4. The function that is returned is reference so any change in value of that variable inside function will be reflected as such.
