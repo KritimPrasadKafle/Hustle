@@ -1,0 +1,173 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2ebe3;
+}
+.main-container {
+  display: flex;
+
+  width: 700px;
+
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  margin: 400px auto;
+  border-style: none;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.coffee img {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.coffee-mug {
+  font-weight: 500;
+  padding-bottom: 80px;
+  padding-left: 30px;
+
+  text-transform: uppercase;
+  margin-top: 0px;
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.coffee-mug h1 {
+  font-weight: 700;
+}
+
+.coffee-mug h2 {
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px;
+  background-color: #3c8067;
+  border: 1px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button img {
+  padding-right: 10px;
+}
+.price {
+  display: flex;
+  margin: 20px;
+}
+.price h3 {
+  padding-left: 10px;
+  padding-top: 8px;
+  text-decoration: line-through;
+} */
+
+body {
+  background-color: #f2ebe3;
+}
+.main-container1 {
+  display: flex;
+  justify-content: center;
+  margin: 300px auto;
+}
+.first {
+  /* border: 1px solid white; */
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.first img {
+  height: 390px;
+  width: 300px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.second {
+  /* border: 1px solid white; */
+  /* display: flex;
+  flex-direction: column; */
+  height: 350px;
+  width: 300px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.second h2 {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+}
+
+.white {
+  padding-top: 20px;
+  line-height: 2px;
+  font-family: "fraunces", serif;
+  color: black;
+  font-weight: 900;
+}
+.mug {
+  font-family: "fraunces", serif;
+  color: black;
+  font-weight: 900;
+}
+
+.description {
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
+.price {
+  padding-top: -2px;
+}
+.price h1 {
+  color: #3c8067;
+}
+.price h3 {
+  position: relative;
+  top: -50px;
+  right: -76px;
+  bottom: -30px;
+  text-decoration: line-through;
+}
+
+button img {
+  padding-right: 10px;
+}
+
+/* button {
+  font-size: 25px;
+  padding: 10px;
+  background-color: #3c8067;
+  border: 1px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+   margin-bottom: 70px; 
+  width: 300px;
+  margin-right: 400px;
+} 
+  */
+
+button {
+  background-color: #3c8067;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 0;
+  /* margin-top: 1.6rem; */
+  cursor: pointer;
+  transition: all 0.1s;
+  padding-bottom: 20px;
+  position: relative;
+  top: -50px;
+}
