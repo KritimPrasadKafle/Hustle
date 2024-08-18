@@ -72,7 +72,7 @@ body {
 .main-container1 {
   display: flex;
   justify-content: center;
-  margin: 300px auto;
+  margin: 150px auto;
 }
 .first {
   /* border: 1px solid white; */

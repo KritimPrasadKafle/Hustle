@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>Todo List</h1>
+  <div>
+    <div id="todo-1">
+      <h4>1. Take class</h4>
+      <button onclick="deletetodo(1)">Delete</button>
+    </div>
+    <div id="todo-2">
+      <h4>2. Go out to eat</h4>
+      <button onclick="deletetodo(2)">Delete</button>
+    </div>
+  </div>
+  <div>
+    <input type="text" />
+    <button>Add Todo</button>
+  </div>
+
+</body>
+
+<script>
+  const updation = document.querySelectorAll("h4")[1];
+  let ctr = 0;
+  function update() {
+    updation.innerHTML = `${ctr} Hello `;
+    ctr++;
+  }
+  // setInterval(update, 5000);
+
+  function deletetodo(index) {
+
+    const deletelist = document.getElementById("todo-" + index);
+    deletelist.parentNode.removeChild(deletelist);
+
+  }
+
+  const divEl = document.createElement("div");
+  divEl.innerHTML = "hi there";
+  const parentEl = document.querySelector("body");
+  parentEl.appendChild(divEl);
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</html> -->
+
+
+
+<html>
+
+<body>
+  <input type="text" />
+  <button onclick="addTodo()">Add todo!</button>
+</body>
+
+<script>
+
+  function addTodo() {
+    const input = document.querySelector("input");
+    const add = document.createElement("div");
+    add.innerHTML = input;
+    document.parentNode.appendChild(add);
+
+
+  }
+</script>
+
+</html>
