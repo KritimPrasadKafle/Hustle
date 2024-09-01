@@ -21,6 +21,8 @@ function isOldEnoughMiddleware(req, res, next) {
   }
 }
 
+app.use(isOldEnoughMiddleware);
+
 app.get("/ride1", function (req, res) {
   if (isOldEnough(req.query.age)) {
     res.json({
