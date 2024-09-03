@@ -1,0 +1,29 @@
+Node Js is one which would be able to execute our javascript files.
+Node Js is the environment. 
+
+Constant cannot be changed whereas the variables can be changed in upcoming time.
+
+const, var, let these keywords have been inject in the environment so it would be knowing what can do what?
+
+What ever we would be doing in the code, Nodejs would be knowing what We need to do.
+
+const cannot be changed.
+
+let something = something;
+
+variable has been reserved in the memory and value has been also reserved.
+
+
+To declare variables we can use let and var.
+
+
+{
+
+}
+
+this is called as scope.
+
+we shouldn't use var because if we use var then we can assign the value to the same variable multiple times which can cause an error.
+ 
+Prefer not to use var because of issue in block scope and functional scope.
+
