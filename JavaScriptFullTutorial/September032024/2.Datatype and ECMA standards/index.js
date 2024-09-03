@@ -20,4 +20,6 @@ let isLoggedIn = false
 
 console.log(typeof "kritim");
 
+console.log(typeof undefined); //undefined
+console.log(typeof null); //object
 

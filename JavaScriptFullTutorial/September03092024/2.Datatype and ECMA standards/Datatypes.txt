@@ -1,4 +1,0 @@
-"use strict" //treat all JS code as newer version
-
-; this helps to know our code for that line is finished
-
