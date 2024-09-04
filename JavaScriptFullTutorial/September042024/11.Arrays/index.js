@@ -73,11 +73,14 @@ const real_another_array = another_array.flat(Infinity); //spreads all the eleme
 // console.log(real_another_array);
 
 
-console.log(Array.isArray("kritim"));
-console.log(Array.from("Kritim"));
-console.log(Array.from({ name: "kritim" }))  //interesting
+// console.log(Array.isArray("kritim"));
+// console.log(Array.from("Kritim"));
+// console.log(Array.from({ name: "kritim" }))  //interesting
 
 let score1 = 100
 let score2 = 200
 let score3 = 300
-console.log(Array.of(score1, score2, score3))
+// console.log(Array.of(score1, score2, score3))
+
+
+
