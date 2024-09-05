@@ -1,0 +1,47 @@
+First Global Execution Context would be created. Global Execution context is {this}.
+
+
+Global Execution Context
+Function Execution Context
+Eval Execution Context
+
+Global Execution Context:
+
+There would be two phases:
+1.Memory creation Phase
+2.Execution Phase
+
+
+
+let val1 = 10;
+let val2 = 5;
+function addNum(num1, num2){
+	let total = num1+num2
+	return total 
+}
+let result1 = addNum(val1,val2);
+let result2 = addNum(10,2);
+
+
+Step 1 -> Global Execution -> this
+Step 2 -> Memory Phase -> val1 -> undefined val2 -> undefined function addNum -> definition result1 -> undefined resullt2 -> undefined 
+Step 3 -> Execution Phase val1 -> 10 val2 -> 5 addNum -> new variable environment + execution thread
+MemoryPhase -> val1 -> undefined val2 -> undefined total -> undefined 
+Execution Context -> num1 -> 10 num2 -> 5 total -> 15 15 would be returned to the global execution context.
+
+After the global execution work is finished, it would be deleted.
+
+Step3 will be continued as we are calling again the function.
+memory phase Execution same happens here too.
+
+
+
+Call Stack
+
+Global Execution would be created.
+function would go into the call stack and then after it is used it would be deleted.
+
+
+
+
+
