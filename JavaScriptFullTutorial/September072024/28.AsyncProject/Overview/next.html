@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Javascript</h1>
+  <button id="start">Start</button>
+  <button id='stop'>Stop</button>
+
+</body>
+<script>
+
+
+  const sayDate = function (str) {
+    console.log("Kritim", Date.now());
+
+  }
+
+  const intervalId = setInterval(sayDate, 2000, "hi");
+
+  clearInterval(intervalId);
+
+  // setInterval(function () {
+  //   console.log("Kritim", Date.now());
+
+  // }, 1000)
+
+
+
+
+</script>
+
+</html>
