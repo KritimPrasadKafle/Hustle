@@ -1,0 +1,27 @@
+Asynchronous JavaScript [Frequently asked question] 🧑‍💻
+
+Asynchronous JavaScript allows your program to begin a task that might take a long time to complete while remaining responsive to other events. Instead of waiting for the task to finish, the program can continue running, and when the task is done, the result is made available to the program.
+
+𝐌𝐢𝐜𝐫𝐨𝐭𝐚𝐬𝐤𝐬 are high-priority tasks (like promise callbacks) executed after the current operation completes, but before the event loop moves to the next task. Macrotasks (like setTimeout, setInterval) are lower priority and executed after the microtask queue is empty, typically at the start of each event loop iteration.
+
+𝐌𝐚𝐜𝐫𝐨𝐭𝐚𝐬𝐤𝐬 are tasks that are queued by functions like setTimeout, setInterval, or events like I/O operations. These tasks are executed after the current event loop iteration completes, and after all microtasks (e.g., promise resolutions) are finished. Each macrotask starts a new cycle of the event loop.
+
+Here are some key points about how asynchronous JavaScript works:
+
+🌴 JavaScript always runs only one task at a time, but the "magic" of asynchronism is made possible by the existence of the web APIs, the callback queue, and the event loop, which are responsible for managing asynchronous tasks
+
+🌴 Asynchronous functions allow your code to do several things at the same time without stopping or blocking the main thread.
+
+🌴 Asynchronous programming is achieved through various techniques, including callbacks, promises, and async/await.
+
+🌴 Callbacks are functions that are passed as arguments to other functions and are executed when the other function has completed its task. 
+
+🌴 Promises are objects that represent the eventual completion (or failure) of an asynchronous operation and allow you to handle the result or error of that operation when it eventually completes.
+
+🌴 Async/await is a modern way of dealing with asynchronous behavior in JavaScript that allows you to write asynchronous code that looks and behaves like synchronous code.
+
+🌴 The event loop is a key part of how JavaScript handles asynchronous code. It executes the code, collects and processes events, and performs queued tasks.
+
+🌴 The event loop has two elements: the stack and the queue. The stack is where synchronous code is executed, while the queue is where asynchronous code is executed.
+
+🌴 Web APIs are used to achieve asynchronicity in JavaScript. They allow you to start a long-running operation by calling a function, have that function start the operation and return immediately, so that your program can still be responsive to other events, and notify you with the result of the operation when it eventually completes.
