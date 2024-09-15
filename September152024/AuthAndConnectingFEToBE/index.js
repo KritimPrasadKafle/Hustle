@@ -4,24 +4,17 @@ const JWT_SECRET = 'hellohirandomcheck'
 const app = express();
 app.use(express.json());
 
-// {username: "kritim", password: 12345678, token : "absgfdkjsdksddsfjksfd"}
-
 const users = [];
 
-//{username : "kritim", password: "123456789"}
+function logger(req, res, next) {
+  console.log(req.method + " request came");
+  next();
+}
 
-//should return a random long string
-// function generateToken() {
-//   let options = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
-//   let token = "";
-//   for (let i = 0; i < 32; i++) {
-//     // use a simple function here
-//     token += options[Math.floor(Math.random() * options.length)]; // 0 => 42 | Math.random() * options.length  
-//   }
-//   return token;
-// }
-
+//localhost:3000
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/public/index.html")
+})
 
 
 app.post('/signup', (req, res) => {
@@ -54,7 +47,7 @@ app.post('/signin', (req, res) => {
 
   if (foundUser) {
     const token = jwt.sign({
-      username: username
+      username: users[i].username
     }, JWT_SECRET); //convert their username over to a jwt
     // foundUser.token = token;
     res.json({
@@ -72,14 +65,26 @@ app.post('/signin', (req, res) => {
 
 })
 
-app.get('/me', (req, res) => {
-  const token = req.headers.token // jwt
-  const decodedInformation = jwt.verify(token, JWT_SECRET); //{username : "kritim@gmail.com"}
+function auth(req, res, next) {
+  const token = req.headers.token;
+  const decodedData = jwt.verify(token, JWT_SECRET);
 
-  const username = decodedInformation.username
+  if (decodedData.username) {
+    req.username = decodedData.username;
+    next()
+  } else {
+    res.json({
+      message: "You are not logged in"
+    })
+  }
+}
+
+app.get('/me', auth, (req, res) => {
+
   let foundUser = null;
+
   for (let i = 0; i < users.length; i++) {
-    if (users[i].username == username) {
+    if (users[i].username == req.username) {
       foundUser = users[i]
     }
   }
@@ -104,8 +109,3 @@ app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 
 });
-
-
-
-
-
