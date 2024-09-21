@@ -3,9 +3,10 @@ const dotenv = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
+const AuthRouter = require('./routes/Auth/auth.js');
 
 //Load environment variables
-dotenv.config();
+// dotenv.config();
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.use(express.json()); //For parsing json bodies
 app.use(morgan('dev')); //For logging
 
 //Database connection 
-mongoose.connect('',
+mongoose.connect('mongodb+srv://admin:1234567890@cluster0.ptksj.mongodb.net/AuthXpert',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -30,6 +31,9 @@ mongoose.connect('',
 app.get('/', (req, res) => {
   res.send('Hello world!');
 });
+
+app.use('/api/auth', AuthRouter);
+
 
 
 //Start server 

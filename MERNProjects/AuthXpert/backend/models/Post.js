@@ -8,6 +8,11 @@ const postSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  "createdAt": {
+    type: Date,
+    required: true
+
+  },
   //Many-to-One with User 
   user: {
     type: mongoose.Schema.Types.ObjectId,

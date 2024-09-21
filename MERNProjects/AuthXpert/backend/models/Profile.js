@@ -4,6 +4,17 @@ const profileSchema = new mongoose.Schema({
     type: String,
     maxlength: 300,
   },
+  "avatar": {
+    type: String,
+
+
+  },
+  "socialLinks": [{
+    type: String,
+
+
+
+  }],
 
   //One-to-One with User
   user: {
