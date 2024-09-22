@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
 const AuthRouter = require('./routes/Auth/auth.js');
+const UserRouter = require('./routes/user.js')
 
 //Load environment variables
 // dotenv.config();
@@ -33,6 +34,8 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/auth', AuthRouter);
+app.use('/api/user', UserRouter);
+
 
 
 

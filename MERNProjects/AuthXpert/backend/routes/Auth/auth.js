@@ -2,7 +2,7 @@ const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../../models/User.js'); //Import User model
-const { signupValidation, loginValidation } = require('../../validation/user.validation.js');
+const { userRegistrationSchema, userLoginSchema } = require('../../validation/user.validation.js');
 const router = express.Router();
 
 const JWT_SECRET = process.env.JWT_SECRET || 'abcde12345';
@@ -14,7 +14,7 @@ router.post('/signup', async (req, res) => {
   try {
     //validate input using Zod
     console.log('Validation');
-    const validation = signupValidation.safeParse(req.body);
+    const validation = userRegistrationSchema.safeParse(req.body);
 
 
     if (!validation.success) {
@@ -52,8 +52,9 @@ router.post('/signup', async (req, res) => {
 //Login Route
 router.post('/login', async (req, res) => {
   try {
+
     //validate input using zod
-    const validation = loginValidation.safeParse(req.body);
+    const validation = userLoginSchema.safeParse(req.body);
     if (!validation.success) {
       res.status(400).json({ error: validation.error.errors });
     }
@@ -87,6 +88,9 @@ router.post('/login', async (req, res) => {
 })
 
 module.exports = router;
+
+
+
 
 
 
