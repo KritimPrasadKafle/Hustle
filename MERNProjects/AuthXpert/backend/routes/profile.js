@@ -26,5 +26,35 @@ router.put('/', authenticateJWT, async (req, res) => {
       await profile.save();
       res.status(201).json({ message: 'Profile created', profile });
     }
+  } catch (error) {
+    res.status(500).json({ error: 'Error updating profile' });
   }
-})
+});
+
+//get the current user's profile
+router.get('/', authenticateJWT, async (req, res) => {
+  try {
+    const profile = await Profile.findOne({ user: req.user.id });
+    if (!profile) {
+      return res.status(404).json({ error: 'Profile not found' });
+    }
+    res.status(200).json({ profile });
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching profile' });
+  }
+});
+
+//Deleting a profile
+router.delete('/', authenticateJWT, async (req, res) => {
+  try {
+    const profile = await Profile.findOneAndDelete({ user: req.user.id });
+    if (!profile) {
+      return res.status(404).json({ error: 'Profile not found' });
+    }
+    res.status(200).json({ message: 'Profile deleted' });
+  } catch (error) {
+    res.status(500).json({ error: 'Error deleting profile' });
+  }
+});
+
+module.exports = router;

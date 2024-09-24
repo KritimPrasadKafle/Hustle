@@ -11,7 +11,7 @@ router.post('/', authenticateJWT, async (req, res) => {
     await newRole.save();
     res.status(201).json({ message: 'Role created successfully', role: newRole });
   } catch (error) {
-    res.status(500).json({ error: 'Error creating role' });
+    res.status(500).json({ error: 'Error creating role', error });
   }
 });
 

@@ -19,8 +19,8 @@ const userSchema = new mongoose.Schema({
   },
   //Many-to-Many relationship with Role
   roles: [{
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Role'
+    type: String,
+    enum: ['Admin', 'User', 'Moderator']
   }],
   //One-to-One relationship with Profile
   profile: {

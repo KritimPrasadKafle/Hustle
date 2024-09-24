@@ -5,7 +5,7 @@ const router = express.Router();
 
 //Create a new User (Admin-only route)
 
-router.post('/', authenticateJWT, restrictUserCreation, adminCheck, async (req, res) => {
+router.post('/', authenticateJWT, async (req, res) => {
   try {
     const { name, email, password, roles } = req.body;
     const user = new User({ name, email, password, roles });

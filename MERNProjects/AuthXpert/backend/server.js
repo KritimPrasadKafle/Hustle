@@ -4,7 +4,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
 const AuthRouter = require('./routes/Auth/auth.js');
-const UserRouter = require('./routes/user.js')
+const UserRouter = require('./routes/user.js');
+const ProfileRouter = require('./routes/profile.js');
+const roleRouter = require('./routes/role.js');
 
 //Load environment variables
 // dotenv.config();
@@ -35,6 +37,8 @@ app.get('/', (req, res) => {
 
 app.use('/api/auth', AuthRouter);
 app.use('/api/user', UserRouter);
+app.use('/api/profiles', ProfileRouter);
+app.use('/api/roles', roleRouter);
 
 
 
