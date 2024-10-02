@@ -1,0 +1,47 @@
+Centralized Transaction
+
+
+
+              Bob
+Bob Sends money to Alice through his bank.
+                |
+        Centralized Banking System
+Bob and Alice's banks take full custody of the funds and transfer money between them.
+                 |
+               Alice
+Alice receives money in her bank.
+
+
+Decentralized Transaction
+
+              Bob
+Bob sends money to Alice through the blockchain.
+               |
+            Blockchain
+The blockchain transfers money between accounts without a trusted third party taking custody.
+               |
+            Alice
+Alice receives money to her public address.
+
+
+
+
+
+Ledger:
+
+A ledger is a book or computer file that keeps track of economic activity. Ledgers can track individual account balances and/or the ongoing movement of money within entire economies. Today, most ledgers are handled by centralized entities such as a bank, which maintain and store ledgers on their own servers in opaque databases.
+
+A blockchain is a digital ledger that is stored and maintained by a decentralized network of computers. Each computer (node) in the network runs the same software and maintains, stores, and validates a copy of the ledger. Public blockchains use their own native asset known as a cryptocurrency to financially incentivize nodes to communicate with one another and reach an agreement (consensus) on the validity of the ledger.
+
+
+Different ways to design a blockchain:
+
+Network Access & Participation – Blockchains can vary in terms of how open or limited the network is to use and participate in. The three main types of blockchains: public (completely open), private (completely closed), and permissioned (open access, limited participation).
+
+Consensus Mechanism – Blockchains can reach consensus about transactions through different means. Some of the most popular consensus mechanisms are proof of work (Bitcoin), proof of stake (Solana), and proof of authority (most private blockchains).
+
+Design Features – Blockchains currently cannot satisfy all desired qualities. Instead, blockchains make tradeoffs to optimize certain feature sets over others between security, decentralization, and scalability — commonly known as the Scalability Trilemma. Other important design features include privacy, transaction finality, and more.
+
+
+ref - https://chain.link/education-hub/blockchain
+

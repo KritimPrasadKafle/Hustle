@@ -1,0 +1,28 @@
+Blockchain:
+- chain of blocks that contains information.
+- distributed ledger that is completely open to anyone. 
+- once data has been recorded in the blockchain, it becomes so difficult to change it.
+
+
+Block:
+- Each block contains some data, the hash of the block and the hash of the previous block.
+- Data : the data that is stored inside a block depends on the type of blockchain.
+For example : Bitcoin:  stores the details about a transaction such as sender, receiver and amount of coins.
+- Hash : can be compared as a fingerprint. It identifies a block and all of its contents and it's always unique, just as a fingerprint. Once block is created, it's hash is being calculated. Changing something inside the block will cause the hash to change. Hashes are useful when you want to detect changes to blocks. 
+
+- Hash of previous block : chain of blocks.The first block is called as genesis block. If we are having three blocks then 1 <- 2 <- 3 . One is changed then every other will get invalid.  Computer are so fast that it can calculate the hash so fast that it can change one block and change the block's previous hashes of other block's and can make it valid again fastly. 
+
+
+Proof-of-work:
+It takes about 10 minutes to calculate the required proof-of-work and add a new block to the chain. 
+
+Distributed:
+Instead of central entity to manage the chain, blockchains use a peer-to-peer network and anyone is allowed to join. When someone joins the network, he gets the full copy of the blockchain.
+If one new block is created then that block would be sended to everyone in the network. Each node then verifies the block to make sure that it hasn't been tampered with. If everything checks out, each node adds this block to their own blockchain. All the nodes in this network create consensus. They agree about what blocks are valid and which aren't. Blocks that are tampered would be rejected by the other nodes in the network. To tampere one node in the blockchain, redo the proof-of-wor for each block and take control of more than 50% of the peer-to-peer network. Then only it would be accepted. That is kind of impossible.
+
+
+Smart Contracts:
+- simple programs that are stored on the blockchain and can be used to automatically exchange coins based on certain conditions. 
+
+
+ref - https://www.youtube.com/watch?v=SSo_EIwHSd4
