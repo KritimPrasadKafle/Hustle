@@ -1,0 +1,113 @@
+The blockchain structure and its components and their interaction, namely:
+
+Nodes within P2P network
+Properties of block & genesis block
+Transactions within the ledger
+The validation process - mining
+The “consensus” within a blockchain architecture
+Proof-of-work
+
+What is blockchain Architecture?
+
+Centralized
+Decentralized 
+Distributed : Public -> Users are anonymous, Private -> Users are not anonymous
+
+
+Database Architecture :
+
+Server would be there which would pass the data to every PC, laptop, smartphone.
+This is client-server.
+
+Blockchain Architecture :
+Each computer would be connected with other computers.
+
+
+
+The traditional architecture of the World Wide Web uses a client-server network. In this case, the server keeps all the required information in one place so that it is easy to update, due to the server being a centralized database controlled by a number of administrators with permissions.
+
+In the case of the distributed network of blockchain architecture, each participant within the network maintains, approves, and updates new entries. The system is controlled not only by separate individuals, but by everyone within the blockchain network. Each member ensures that all records and procedures are in order, which results in data validity and security. Thus, parties that do not necessarily trust each other are able to reach a common consensus.
+
+To summarize things, the blockchain is a decentralized, distributed ledger (public or private) of different kinds of transactions arranged into a P2P network. This network consists of many computers, but in a way that the data cannot be altered without the consensus of the whole network (each separate computer).
+
+
+Types of Blockchain Architecture:
+
+Public blockchain architecture.
+Private blockchain architecture.
+Consortium blockchain architecture.
+
+
+
+
+
+There are two types of nodes:
+Validator Node: can both initiate/receive and validate transactions
+Memeber Node: Can only initiate/receive transactions
+
+
+Property	                               Public blockchain	Consortium blockchain	Private blockchain
+Consensus determination	                          All miners       	Selected set of nodes	Within one organization
+Read permission                                    Public	        Public or restricted 	Public or restricted
+Immutability level	                  Almost impossible to tamper	Could be tampered	Could be tampered
+Efficiency (use of resources)                   	Low                     	High	          High
+Centralization                                  	No	           Partial              	Yes
+Consensus process	                        Permissionless        	Needs permission	Needs permission
+
+
+
+These are the core blockchain architecture components:
+
+Node - user or computer within the blockchain architecture (each has an independent copy of the whole blockchain ledger)
+Transaction - smallest building block of a blockchain system (records, information, etc.) that serves as the purpose of blockchain
+Block - a data structure used for keeping a set of transactions which is distributed to all nodes in the network
+Chain - a sequence of blocks in a specific order
+Miners - specific nodes which perform the block verification process before adding anything to the blockchain structure
+Consensus (consensus protocol) - a set of rules and arrangements to carry out blockchain operations.
+
+
+
+How blockchain works?
+
+1. A transaction is requested.
+2. A block that represents the transaction is created.
+3. The block is sent to every node in the network.
+4. Nodes validate the transaction.
+5. Nodes receive a reward for the proof of work.
+6. The block is added to the existing blockchain.
+7. The transaction is complete.
+
+
+
+Let's have a closer look at what is a block in a blockchain. Each blockchain block consists of:
+
+certain data
+the hash of the block
+the hash from the previous block
+
+
+
+
+
+
+
+
+
+Key Characteristics of Blockchain Architecture
+Blockchain architecture possesses a lot of benefits for businesses. Here are several embedded characteristics:
+
+Cryptography - blockchain transactions are validated and trustworthy due to the complex computations and cryptographic proof among involved parties
+
+Immutability - any records made in a blockchain cannot be changed or deleted
+
+Provenance - refers to the fact that it is possible to track the origin of every transaction inside the blockchain ledger
+
+Decentralization - each member of the blockchain structure has access to the whole distributed database. As opposed to the central-based system, consensus algorithm allows for control of the network
+
+Anonymity- each blockchain network participant has a generated address, not user identity. This keeps users' anonymity, especially in a public blockchain structure
+
+Transparency - the blockchain system cannot be corrupted. This is very unlikely to happen, as it requires huge computing power to overwrite the blockchain network completely
+
+
+
+ref - https://mlsdev.com/blog/156-how-to-build-your-own-blockchain-architecture
