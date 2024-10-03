@@ -1,0 +1,98 @@
+What is decentralization?
+In blockchain, decentralization refers to the transfer of control and decision-making from a centralized entity (individual, organization, or group thereof) to a distributed network. Decentralized networks strive to reduce the level of trust that participants must place in one another, and deter their ability to exert authority or control over one another in ways that degrade the functionality of the network.
+
+Why decentralization matters
+Decentralization is not a new concept. When building a technology solution, three primary network architectures are typically considered: centralized, distributed, and decentralized. While blockchain technologies often make use of decentralized networks, a blockchain application itself cannot be categorized simply as being decentralized or not. Rather, decentralization is a sliding scale and should be applied to all aspects of a blockchain application. By decentralizing the management of and access to resources in an application, greater and fairer service can be achieved. Decentralization typically has some tradeoffs such as lower transaction throughput, but ideally, the tradeoffs are worth the improved stability and service levels they produce.
+
+
+Benefits of decentralization
+Provides a trustless environment
+Improves data reconciliation
+Reduces points of weakness
+Optimizes resource distribution
+
+
+
+
+
+
+
+ 
+
+                                  Centralized                                Distributed                                                                Decentralized
+
+Network
+/hardware resources       Maintained & controlled by                       Spread across multiple data centers                     Resources are owned & shared by  network members; 
+                          single entity in a centralized location           & geographies; owned by network provider                   difficult to maintain since no one owns it
+
+                    
+
+
+
+
+Solution components     Maintained & controlled by central entity        Maintained & controlled by solution provider               Each member has exact same copy of distributed ledger
+
+
+
+
+
+
+
+Data                   Maintained & controlled by central entity        Typically owned & managed by customer                         Only added through group consensus
+
+
+
+
+
+
+
+Control               Controlled by central entity                      Typically, a shared responsibility between network           No one owns the data & everyone owns the data
+                                                                          provider, solution provider & customer
+                                             
+
+
+   
+
+Single Point of Failure     Yes                                                       No                                                    No
+
+
+
+
+Fault tolerance            Low                                                        High                                                  Extremely high
+
+
+
+
+
+
+
+Security                  Maintained & controlled by central entity                 Typically, a shared responsibility between              Increases as # of network members increase
+                                                                                    network provider, solution provider & customer
+
+
+
+
+
+
+Performance              Maintained & controlled by central entity             Increases as network/hardware resources scale up and out       Decreases as # of network members increase
+
+
+
+
+
+
+Example                   ERP system                                                      Cloud computing                                                 Blockchain
+
+
+
+ref - https://aws.amazon.com/blockchain/decentralization-in-blockchain/
+
+
+
+Closing Thoughts
+To sum up this in a simplified way, the decentralization in the blockchain is an information base that stores a library of resources and trades across a peer-to-peer network. The “resource” may not exclusively be cash or transactional data, yet additional data regarding ownership, agreements, products, and some other data. A blockchain doesn’t copy the worth that is transmitted as other peer-to-peer networks do. However, all things being considered, it enlists that credit has been moved from one member to the next.
+
+
+
+ref - https://www.blockchain-council.org/blockchain/what-is-decentralization-in-blockchain/
+

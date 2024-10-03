@@ -1,0 +1,15 @@
+Blockchain:
+
+- runs on a network of computers
+- stores data and transactions in an immutable shared ledger.
+- nodes : any computer running the client software
+- any one can run a node.
+- decentralized - no single entity can control the entire blockchain.
+- powers decentralized digital currencies, i.e. cryptocurrencies.
+- blockchain serve as platforms that store code known as smart contracts. 
+- client in smart contracts contain virtual machines that allow them to interpret and run the code. 
+- smart contracts: enable developers to create applications that are open to anyone, historically transparent, and egalitarian compared to today's typical web applications.
+- pubic blockchain : available to anyone
+
+
+ref - https://www.youtube.com/watch?v=4ff9esY_4aU&list=PLVP9aGDn-X0QCPZvRu3K1SJeFnQ-HJGSa&index=2
