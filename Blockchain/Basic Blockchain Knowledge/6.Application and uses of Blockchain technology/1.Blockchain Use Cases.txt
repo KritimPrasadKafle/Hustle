@@ -1,0 +1,13 @@
+Blockchain technology’s core characteristics include decentralization, transparency, immutability, and automation. These elements can be applied to various industries, creating a multitude of use cases. Here are what we believe to be the most pertinent blockchain use cases for enterprises, institutions, and governments.
+
+
+1. Supply chain management
+2. Digital IDs
+3. Healthcare
+4. Wills or inheritances
+5. Food safety
+6. Digital voting
+7. Real estate
+8. Data sharing
+9. Weapons tracking
+10. Copyright and royalty protection
