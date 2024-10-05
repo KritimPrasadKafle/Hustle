@@ -104,3 +104,15 @@ In addition to the bitcoin cryptocurrency, the Bitcoin blockchain supports an op
 The Ethereum blockchain extended this scripting feature into a complete execution framework called smart contracts.
 
 A smart contract provides the powerful capability of code execution that embeds business logic into the blockchain.
+
+
+
+Based on these capabilities, three major types of blockchains have emerged:
+
+Only Cryptocurrency: Coins in the cryptocurrency chain, for example, Bitcoin
+Cryptocurrency + Business Logic: This provides a layer of business logic supported by software execution, for example, Ethereum
+Only Business Logic: This type has no cryptocurrency and only supports software execution for business logic, for example, the Linux Foundation's Hyperledger
+
+
+
+ref - https://blog.mlq.ai/blockchain-basics/
