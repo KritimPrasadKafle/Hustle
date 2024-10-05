@@ -1,0 +1,106 @@
+Specifically, a few real-world examples of blockchains application in these industries include:
+
+Digital media transfer: for example the sale of art and collectibles with non-fungible tokens (NFTs)
+Remote services delivery: for example in the travel and tourism industry
+Decentralized business logic: for example moving computing to data sources
+Distributed intelligence: for example in education credentialing
+Distributed resources: for example, in power generation and distribution
+Crowdfunding: for example in startup financing
+Crowd operations: for example, in electronic voting
+Identity management: for example, having a single ID
+And many more
+
+
+To recap, at its core blockchain technology enables three main innovations:
+
+Peer-to-peer transactions in a decentralized network
+Establishing trust among unknown peers
+Recording transactions in an immutable distributed ledger
+
+
+
+In the Bitcoin blockchain, transactions are a basic element:
+
+Transactions are validated and broadcast
+Many transactions form a single block
+Many blocks form a chain
+
+
+
+Understanding a Single Transaction in the Bitcoin Blockchain
+
+A core concept of the bitcoin network is an Unspent Transaction Output, otherwise known as UTXO.
+
+The set of all UTXOs in the Bitcoin network collectively translate the state of the Bitcoin blockchain.
+
+
+UTXOs are referenced as the inputs of a transaction and are also the outputs generated from a transaction.
+
+All UTXOs in the system are stored by the network's participant nodes in a database.
+
+In the Bitcoin blockchain, a transaction uses the amount specified by one or more UTXOs and transmits it to one or more new output UTXOs.
+
+
+
+
+The structure of a UTXO includes:
+
+A unique identifier of the transaction that created the UTXO
+An index of the position of the UTXO in the transaction output lists
+A value of the transaction
+An optional script that specifies the conditions of which the output can be spent
+
+
+
+
+The transaction itself includes the following elements:
+
+A reference number of the current transaction
+Reference(s) to one of more input UTXOs
+Reference(s) to one of more output UTXOs generated from the current transaction
+The total input and output amount
+
+
+
+Operations in a decentralized networks are the responsibility of the peer participants and their respective computational nodes.
+
+
+
+In particular, these operations include:
+
+Gathering the transactions for a block
+Broadcasting valid transactions and blocks
+Reaching consensus on the next block to be created
+Chaining the blocks together to form an immutable record
+
+
+
+
+Bitcoin Blockchain Operations
+Let's take a look at the operations of the Bitcoin blockchain in more detail.
+
+There are two major participants in the bitcoin network...
+
+The first participants are people that initiate the transfer of value by creating a transaction.
+
+The second group of participants are called miners, which provide the computational resources needed to:
+
+Verify transactions
+Broadcast transactions
+Compete for the right to create a block
+Reach consensus by validating the block
+Broadcast the new block
+Confirm transactions
+For these computational resources provided by miners, they are incentivized and rewarded with newly minted bitcoin, which is currently set at 6.25 BTC.
+
+The algorithm that miners use to reach consensus is called the proof-of-work protocol, which t requires the miner to provide the computational work required to solve a puzzle and claim the right to add a new block to the chain.
+
+To summarize, the main operations in a blockchain include transaction validation and block creation with a consensus of the participants.
+
+
+
+In addition to the bitcoin cryptocurrency, the Bitcoin blockchain supports an optional feature called scripts for the conditional transfer of values.
+
+The Ethereum blockchain extended this scripting feature into a complete execution framework called smart contracts.
+
+A smart contract provides the powerful capability of code execution that embeds business logic into the blockchain.
