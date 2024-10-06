@@ -1,0 +1,6 @@
+Cryptographic truth is strictly better than "Just Trust Us".
+
+In cryptographic truth, there isn't some person somewhere that decides what happens.
+
+There's math, encryption, physics. 
+
