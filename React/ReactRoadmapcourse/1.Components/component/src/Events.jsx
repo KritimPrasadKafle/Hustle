@@ -4,11 +4,11 @@ function handleClick() {
   alert('You clicked button');
 }
 
-export default function Events() {
-  return (
-    <button onClick={handleClick}> Submit</button >
-  );
-}
+// export default function Events() {
+//   return (
+//     <button onClick={handleClick}> Submit</button >
+//   );
+// }
 export default function NewFunction() {
   const [count, setCount] = useState(0);
 
