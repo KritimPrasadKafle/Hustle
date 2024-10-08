@@ -1,0 +1,27 @@
+Problem: A Breakdown in Societal Trust
+
+1.Centralized Ownership of Data and Processes
+2.No Shared Sense of Truth
+3.Lack of Enforcement and Accountability
+4.Inefficient Multi-Step Processes
+
+
+Solution: Blockchain and Oracle-Based Trust Networks
+
+Minimally extractive coordination is when infrastructure facilitates interactions between users with minimal, non-value additive rent-seeking. Unlike a for-profit company, the facilitator here has no financial agenda besides connecting users. For example, a financial marketplace that enables users to buy and sell assets with minimal transaction fees. 
+
+Trust-minimized execution refers to a process that’s facilitated in a manner where the probability of it operating correctly is so statistically high that it can almost be considered guaranteed. In a sense, the user doesn’t have to trust the infrastructure. Instead, the infrastructure is built to be deterministic, meaning all potential variables that could influence the process are removed or decreased to the point where it’s highly unlikely to not execute exactly as written/coded. Some have even referred to this type of infrastructure as trustless, although one can argue that nothing is truly trustless.
+
+
+
+The combination of blockchains and oracles provides an end-to-end trust network for coordinating economic and social activities. Blockchains act as tamper-proof backends for codifying, tracking, and enforcing digital contracts while oracles enable smart contracts to accurately verify real-world events, seamlessly interact with legacy systems, and securely interoperate across blockchains. This model shifts applications and digital contracts from probabilistic and human-mediated to deterministic and verified through decentralized consensus.
+
+
+Future: Societal Trust Restored by the Power of Cryptographic Truth
+	1.Self-Ownership of Data and Decentralized Ownership of Processes
+	2.Shared Truth
+	3.Consensus-Based and Cryptographically Enforced Commitments
+	4.Efficient Peer-to-Peer Processes
+
+
+ref - https://blog.chain.link/what-crypto-is-really-about/

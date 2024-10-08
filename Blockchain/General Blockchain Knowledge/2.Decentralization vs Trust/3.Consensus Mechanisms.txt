@@ -1,0 +1,76 @@
+The term 'consensus mechanism' is often used colloquially to refer to 'proof-of-stake', 'proof-of-work' or 'proof-of-authority' protocols. However, these are just components in consensus mechanisms that protect against Sybil attacks.
+
+
+By consensus, we mean that a general agreement has been reached.
+
+In regard to the Ethereum blockchain, the process is formalized, and reaching consensus means that at least 66% of the nodes on the network agree on the global state of the network.
+
+
+
+The term consensus mechanism refers to the entire stack of protocols, incentives and ideas that allow a network of nodes to agree on the state of a blockchain.
+
+The consensus mechanism is to ensure whether the records are true and honest.
+
+Types of consensus mechanisms
+
+Proof-of-work based
+Like Bitcoin, Ethereum once used a proof-of-work (PoW) based consensus protocol.
+
+
+In Proof-of-work, transaction is being stored in the blocks validated by having people solve a complicated math problem attached to it. This is typically done by powerful computers and is known as "mining". A  reward in the form of a cryptocurrency is issued to the first miner who cracks the problem. 
+
+Proof-of-work is a race to figure out the right combination on a treasure chest. 
+Cryptocurrencies like bitcoin and ethereum use a proof-of-work mechanism. 
+
+Proof-of-stake
+Here, the creator of a new block, also known as a validator, is randomly chosen based on how much stake they commit to the network. The higher the stake placed, the higher the chance to be selected as a validator. 
+Blockchain protocols like Cardano's Ouroboros and EOS adopt the Proof-of-Stake consensus. 
+
+
+
+Proof-of_Authority
+A modified form of Proof-of-Stakem here, only approved parties selected based on their reputation, can become validators. The group of treasure hunters from a union and pool their treasures. Based on their level of trustworthiness, a select few are appointed by the group to ensure the validity of the chest's content. 
+IBM's Hyperledger Fabric and Ethereum's Kovan Testnet are some examples of blockchain systems that use proof-of-Authority. 
+
+
+
+Proof-of_work consensus thus comes into play to reward validators whohave performed work. 
+
+
+Hybrid Consensus:
+
+With Hyperledger Fabric, each student record is secured with a private hashkey owned by the student. The data can only be accessed when the students provide the unique key. This means student privact is presered and controlled by the student themselves. 
+
+
+
+
+
+Proof-of-work based
+Like Bitcoin, Ethereum once used a proof-of-work (PoW) based consensus protocol.
+
+Block creation
+Miners compete to create new blocks filled with processed transactions. The winner shares the new block with the rest of the network and earns some freshly minted ETH. The race is won by the computer which is able to solve a math puzzle fastest. This produces the cryptographic link between the current block and the block that went before. Solving this puzzle is the work in "proof-of-work". The canonical chain is then determined by a fork-choice rule that selects the set of blocks that have had the most work done to mine them.
+
+Security
+The network is kept secure by the fact that you'd need 51% of the network's computing power to defraud the chain. This would require such huge investments in equipment and energy; you're likely to spend more than you'd gain.
+
+More on proof-of-work
+
+Proof-of-stake based
+Ethereum now uses a proof-of-stake (PoS) based consensus protocol.
+
+Block creation
+Validators create blocks. One validator is randomly selected in each slot to be the block proposer. Their consensus client requests a bundle of transactions as an 'execution payload' from their paired execution client. They wrap this in consensus data to form a block, which they send to other nodes on the Ethereum network. This block production is rewarded in ETH. In rare cases when multiple possible blocks exist for a single slot, or nodes hear about blocks at different times, the fork choice algorithm picks the block that forms the chain with the greatest weight of attestations (where weight is the number of validators attesting scaled by their ETH balance).
+
+Security
+A proof-of-stake system is secure crypto-economically because an attacker attempting to take control of the chain must destroy a massive amount of ETH. A system of rewards incentivizes individual stakers to behave honestly, and penalties disincentivize stakers from acting maliciously.
+
+
+
+
+Sybil resistance & chain selection
+Proof-of-work and proof-of-stake alone are not consensus protocols, but they are often referred to as such for simplicity. They are actually Sybil resistance mechanisms and block author selectors; they are a way to decide who is the author of the latest block. Another important component is the chain selection (aka fork choice) algorithm that enables nodes to pick one single correct block at the head of the chain in scenarios where multiple blocks exist in the same position.
+
+Sybil resistance measures how a protocol fares against a Sybil attack. Resistance to this type of attack is essential for a decentralized blockchain and enables miners and validators to be rewarded equally based on resources put in. Proof-of-work and proof-of-stake protect against this by making users expend a lot of energy or put up a lot of collateral. These protections are an economic deterrent to Sybil attacks.
+
+A chain selection rule is used to decide which chain is the "correct" chain. Bitcoin uses the "longest chain" rule, which means that whichever blockchain is the longest will be the one the rest of the nodes accept as valid and work with. For proof-of-work chains, the longest chain is determined by the chain's total cumulative proof-of-work difficulty. Ethereum used to use the longest chain rule too; however, now that Ethereum runs on proof-of-stake it adopted an updated fork-choice algorithm that measures the 'weight' of the chain. The weight is the accumulated sum of validator votes, weighted by validator staked-ether balances.

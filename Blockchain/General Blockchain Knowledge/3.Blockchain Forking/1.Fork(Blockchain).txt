@@ -1,0 +1,5 @@
+In blockchain, a fork is defined variously as:
+
+"What happens when a blockchain diverges into two potential paths forward",
+"A change in protocol", or
+A situation that "occurs when two or more blocks have the same block height".

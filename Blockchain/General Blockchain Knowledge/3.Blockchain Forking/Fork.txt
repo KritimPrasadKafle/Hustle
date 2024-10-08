@@ -1,0 +1,7 @@
+Fork in blockchain are if any modification are being done in the blocks then it is there to  upgrade.
+
+Soft Fork: is literally like a software update for the blockchain once a majority of miners or nodes agree to it becomes the new set of standards of the network. It is used for mostly to get the recents updates or features. For mostly a big crypto like bitcoin. 
+
+Hard Fork: when developer community changes the code so much that the new version is no longer compatible with the previous blocks. then blockchain would be divided into two parts. i.e. Base model and New Model. 
+
+For example: BTC GOLD and BTC Cash 
