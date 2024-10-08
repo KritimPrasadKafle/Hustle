@@ -1,0 +1,46 @@
+Blockchain is an ever-growing ledger that keeps a permanent record of all transactions that took place on the network in a secure and chronological order, and cannot be changed or tampered with.
+
+
+1. An ever-growing ledger
+2. A permanent record
+3. A secure record
+4. Chronological Order ( in timestamp transaction happens)
+
+cannot be hampered and tampered.
+
+
+
+Internet :
+
+CLient-Server model (Centralized) Stores all the data and infromation. example: banking
+
+Mobile banking. every data is stored in the server i.e. centralized
+
+Cons to client:
+hackers
+network issue
+
+
+Blockchain:
+decentralized system of nodes: nodes are the computers.
+Network cannot fail.
+The network won't fail if one node is failed.
+
+Information on Blockchain cannot be changed.
+Security
+
+History of Blockchain:
+Bitcoin: peer-to-peer
+Need to verify digital information
+TimeStamping digital documents
+
+Need to Verify:
+When a Document was signed?
+When a Document was changed?
+When a Document was altered?
+
+
+Make sure the document cannot be tampered.
+
+
+
