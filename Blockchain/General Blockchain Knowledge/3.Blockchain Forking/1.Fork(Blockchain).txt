@@ -3,3 +3,19 @@ In blockchain, a fork is defined variously as:
 "What happens when a blockchain diverges into two potential paths forward",
 "A change in protocol", or
 A situation that "occurs when two or more blocks have the same block height".
+
+Forks can be classified as accidental or intentional. Accidental fork happens when two or more miners find a block at nearly the same time. The fork is resolved when subsequent block(s) are added and one of the chains becomes longer than the alternative(s). The network abandons the blocks that are not in the longest chain (they are called orphaned blocks).
+
+Intentional forks that modify the rules of a blockchain can be classified as follows:
+
+Source code fork
+See also: Fork (software development)
+A source code fork or project fork is when developers take a copy of source code from one cryptocurrency project and start independent development on it, creating a separate and new piece of blockchain. Such examples are; Litecoin a source code fork of Bitcoin, Monero fork of Bytecoin and Dogecoin fork of Litecoin.
+
+Hard fork
+A hard fork is a change to the blockchain protocol that is not backward compatible and requires all users to upgrade their software in order to continue participating in the network. In a hard fork, the network splits into two separate versions: one that follows the new rules and one that follows the old rules.
+
+A more recent hard-fork example is of Bitcoin in 2017, which resulted in a split creating Bitcoin Cash.[8] The network split was mainly due to a disagreement in how to increase the transactions per second to accommodate for demand.
+
+Soft fork
+A soft fork is a backward-compatible change to the blockchain protocol that allows new rules to be introduced without requiring all users to upgrade their software. In a soft fork, a majority of the network’s miners implement the new rules and begin following the updated version of the blockchain. The rest of the network can continue to follow the blockchain, but they will be unable to validate that new blocks follow the updated rules. Because a soft fork is backward-compatible, it does not result in the creation of a new blockchain or the splitting of the network. Instead, it allows the network to gradually transition to the new rules while still maintaining compatibility with the old rules.

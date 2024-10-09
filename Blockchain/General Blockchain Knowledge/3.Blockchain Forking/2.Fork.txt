@@ -1,0 +1,39 @@
+Cryptocurrencies like Bitcoin and Ethereum are powered by decentralized, open-source software called a blockchain. A fork happens whenever a community makes a change to the blockchain’s protocol, or basic set of rules.
+
+Cryptocurrencies like Bitcoin and Ethereum are powered by decentralized, open software that anyone can contribute to called a blockchain. They’re called blockchains because they’re literally made up of blocks of data – picture a really long train – that can be traced all the way back to the first-ever transaction on the network. And because they are open source, they rely on their communities to maintain and develop their underlying code.
+
+
+But it’s also possible for the developers of a new cryptocurrency to use a fork to create entire new coins and ecosystems.
+
+
+
+Soft fork: Think of a soft fork as a software upgrade for the blockchain. As long as it’s adopted by all users, it becomes a currency’s new set of standards. Soft forks have been used to bring new features or functions, typically at the programming level, to both Bitcoin and Ethereum. Because the end result is a single blockchain, the changes are backward-compatible with the pre-fork blocks. 
+
+Hard fork: A hard fork happens when the code changes so much the new version is no longer backward-compatible with earlier blocks. In this scenario, the blockchain splits in two: the original blockchain and new version that follows the new set of rules. This creates an entirely new cryptocurrency – and is the source of many well-known coins. Cryptocurrencies like Bitcoin Cash and Bitcoin Gold evolved out of the original Bitcoin blockchain via hard fork. 
+
+
+
+Why do forks occur?
+Just like all software needs upgrades, blockchains are updated for a variety of reasons:
+
+To add functionality
+
+To address security risks
+
+To resolve a disagreement within the community about the cryptocurrency’s direction
+
+
+
+
+
+How are forks continuing to change the crypto landscape?
+The Ethereum blockchain is designed to run “smart contracts,” which are chunks of code that automatically execute a set of predetermined actions when certain criteria are met. Smart contract applications include everything from games to logistics tools to DeFi dapps. 
+
+
+
+
+As the platform that runs all these applications, you can think of the Ethereum blockchain as similar to a computer’s operating system. In that analogy, the various Ethereum forks – Ethereum, Ethereum Classic, Ethereum 2.0 – are like newer versions of an operating system that add features or efficiencies the prior versions might have lacked. 
+
+An older fork might continue as a stable, well-proven platform while a newer fork might offer developers entirely novel ways of interacting with it. (Older and newer versions can eventually merge or continue evolving further apart.)  
+
+Think of a soft fork as a ‘software upgrade’ (like when your phone asks you to update to the latest OS) and a hard fork as an entire new operating system (like Linux and Mac OS are evolutions of the half-century old UNIX platform).
