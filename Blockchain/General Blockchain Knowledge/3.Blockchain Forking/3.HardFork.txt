@@ -1,0 +1,11 @@
+A hard fork is an event in which a change to a blockchain results in two branches: one that follows previous protocols and one that follows the new version.
+In a hard fork, holders of tokens in the original blockchain will also be granted tokens in the new fork, but participants must choose which blockchain to continue verifying.
+Hard forks are not specific to any single blockchain—it is an event that many have gone through.
+Hard forks occur for several reasons, such as developer disagreements, required updates to a blockchain, or someone attempting to make another blockchain and cryptocurrency they control.
+
+Developers cannot force changes on a public blockchain that relies on participation. Public blockchains rely on their participants, so changes must be implemented by them, not forced upon them. Otherwise, they can refuse to accept the changes and keep their preferred version.
+
+
+Hard forks are a change in programming that results in a blockchain split. Sometimes, hard forks are controversial in the community involved in a blockchain; at other times, they are necessary for a blockchain to progress.
+
+In situations with controversy, participants and users can either upload the updated blockchain and begin processing it or reject it and use the old chain. This is how several blockchains and cryptocurrencies, such as Bitcoin Cash and Ethereum Classic, started.

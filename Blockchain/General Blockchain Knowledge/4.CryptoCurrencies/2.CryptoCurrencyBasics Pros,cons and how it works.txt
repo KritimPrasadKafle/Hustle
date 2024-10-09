@@ -1,0 +1,22 @@
+Cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services or traded for a profit. Bitcoin is the most widely used cryptocurrency.
+
+
+Cryptocurrencies are generally used to pay for services or as speculative investments.
+
+Cryptocurrencies are powered by a technology known as blockchain.
+
+Crypto prices are extremely volatile, and the industry is filled with uncertainty.
+
+There are tax consequences to buying and selling cryptocurrencies.
+
+Bitcoin is still the dominant cryptocurrency, followed by Ethereum.
+
+
+What does proof of work mean?
+Proof of work is one way of incentivizing users to help maintain an accurate historical record of who owns what on a blockchain network. Bitcoin uses proof of work, which makes this method an important part of the crypto conversation. Blockchains rely on users to collate and submit blocks of recent transactions for inclusion in the ledger, and Bitcoin's protocol rewards them for doing so successfully. This process is known as mining.
+
+There is stiff competition for these rewards, so many users try to submit blocks, but only one can be selected for each new block of transactions. To decide who gets the reward, Bitcoin requires users to solve a difficult puzzle, which uses a huge amount of energy and computing power. The completion of this puzzle is the "work" in proof of work.
+
+For lucky miners, the Bitcoin rewards are more than enough to offset the costs involved. But the huge upfront cost is also a way to discourage dishonest players. If you win the right to create a block, it might not be worth the risk of tampering with the records and having your submission thrown out — forfeiting the reward. In this instance, spending the money on energy costs in an attempt to tamper with the historical record would have resulted in significant loss.
+
+Ultimately, the goal of proof of work is to make it more rewarding to play by the rules than to try to break them.
