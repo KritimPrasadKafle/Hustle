@@ -21,20 +21,33 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(
-      firstName,
-      lastName,
-      email,
-      contact,
-      gender,
-      selectedOption,
-      subjects,
-      resume,
-      url,
-      about
-    );
 
-  }
+    const formData = new FormData();
+
+    formData.append("firstName", firstName);
+    formData.append("lastName", lastName);
+    formData.append("email", email);
+    formData.append("contact", contact);
+    formData.append("gender", gender);
+    formData.append("subjects", JSON.stringify(subjects)); // Convert subjects object to JSON string
+    formData.append("resume", resume); // This will include the file
+    formData.append("url", url);
+    formData.append("selectedOption", selectedOption);
+    formData.append("about", about);
+
+    // Make the API call
+    fetch("http://localhost:5000/api/forms/submit", {
+      method: "POST",
+      body: formData,
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log("Success:", data);
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+  };
 
   const handleSubjectChange = (sub) => {
     setSubjects((prev) => ({
@@ -99,7 +112,7 @@ function App() {
           <input type="checkbox" name="lang" id="physics" checked={subjects.physics === true} onChange={(e) => handleSubjectChange("physics")} /> Physics
 
           <label for="file">Upload Resume*</label>
-          <input type="file" name="file" id="file" onChange={(e) => setResume(e.target.files[0])}
+          <input type="file" name="resume" id="file" onChange={(e) => setResume(e.target.files[0])}
             placeholder='Enter Upload file' required
           />
 
