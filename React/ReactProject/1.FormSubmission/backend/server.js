@@ -18,6 +18,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 //Routes
 app.use('/api/forms', formRoutes);
+app.use('/api/auth', authRoutes);
 
 //start server
 const PORT = process.env.PORT || 5000;
