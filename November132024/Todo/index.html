@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="todoInput">
+  <button onclick="AddingTodo()">add</button>
+  <script>
+    counter = 0;
+    function AddingTodo() {
+      const divEl = document.createElement("div");
+      divEl.setAttribute("id", `item-${counter}`);
+      const valAdd = document.getElementById("todoInput").value;
+      divEl.innerHTML = `
+        <span>${valAdd}</span>
+        <button onclick="deleteIt('item-${counter}')">Delete</button>
+      `;
+
+      document.querySelector("body").appendChild(divEl);
+      counter = counter + 1;
+    }
+    function deleteIt(ctr) {
+      const value = document.getElementById(ctr);
+      document.body.removeChild(value);
+    }
+
+
+
+
+
+
+
+  </script>
+</body>
+
+
+</html>
