@@ -58,5 +58,29 @@ app.post("/signin", function (req, res) {
 })
 
 app.get("/me", (req, res) => {
+  const token = req.headers.token
+  const decodedInformation = jwt.verify(token, JWT_SECRET);
+  const unAuthDecodedInfo = jwt.decode(token);
+  const username = decodedInformation.username
+  let foundUser = null;
 
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].username == username) {
+      foundUser = users[i]
+    }
+  }
+
+  if (foundUser) {
+    res.json({
+      foundUser.username,
+      password: foundUser.password
+    })
+  }
+  else {
+    res.json({
+      message: "token invalid"
+    })
+  }
 })
+
+app.listen(3000);
