@@ -3,17 +3,16 @@ import './App.css'
 function App() {
 
   return (
-    <>
-      {/* <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-       */}
-      <div className='flex justify-center'>
-        <div>child1</div>
-        <div>child2</div>
 
-        <div>child3</div>
+    <body class="h-screen bg-gradient-to-b from-green-200 to-green-500" >
 
-      </div >
-    </>
+      <div >
+        hello
+
+      </div>
+    </body>
+
+
   )
 }
 
