@@ -16,7 +16,3 @@ type UserOrAdmin = User | Admin;
 function greet(user: UserOrAdmin) {
   console.log(user.name);
 }
-
-interface User {
-  age: number | string;
-}
