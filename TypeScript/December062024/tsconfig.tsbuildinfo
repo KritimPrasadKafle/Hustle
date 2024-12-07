@@ -1,1 +1,1 @@
-{"root":["./index.ts","./iseven.ts","./try.ts"],"version":"5.7.2"}
+{"root":["./user.ts","./abstract.ts","./exclude.ts","./exercise.ts","./index.ts","./iseven.ts","./map.ts","./people.ts","./pick.ts","./readonly.ts","./records.ts","./shape.ts","./try.ts","./typecheck.ts"],"errors":true,"version":"5.7.2"}
