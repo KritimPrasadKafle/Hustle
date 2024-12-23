@@ -13,7 +13,7 @@ const Check = () => {
     };
     console.log(data);
 
-    const response = await axios.post("http://localhost:5552/", data);
+    const response = await axios.post("http://localhost:5552/user", data);
     setFirstName("");
     setEmail("");
     setPassword("");
