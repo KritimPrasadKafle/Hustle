@@ -15,6 +15,10 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!");
 });
 
+app.post("/send", (req: Request, res: Response) => {
+  const { name, email, message } = req.body;
+});
+
 app.post("/deliver", async (req: Request, res: Response) => {
   const { recipient, subject, text, html } = req.body;
   try {
