@@ -11,3 +11,4 @@ const str = "hello"
 const byteArray1 = new TextEncoder().encode(str);
 const hexString1 = arrayToHex(byteArray1);
 console.log(hexString1);
+
