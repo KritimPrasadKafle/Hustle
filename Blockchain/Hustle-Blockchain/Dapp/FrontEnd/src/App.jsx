@@ -10,6 +10,9 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { RequestAirdrop } from './RequestAirdrop';
+import { ShowBalance } from './ShowBalance';
+import { SendTokens } from './SendTokens';
+import { SignMessage } from './SignMessage';
 const App = () => {
   return (
     <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
@@ -17,7 +20,10 @@ const App = () => {
         <WalletModalProvider>
           <div style={{ width: "100vw", display: "flex", justifyContent: "center" }}>
             <WalletMultiButton />
-            <RequestAirdrop />
+            {/* <RequestAirdrop /> */}
+            <SendTokens />
+            <ShowBalance />
+            <SignMessage />
 
           </div>
         </WalletModalProvider>
