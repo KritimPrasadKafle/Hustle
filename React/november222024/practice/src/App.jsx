@@ -1,60 +1,27 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './layout/layout';
+import Login from './components/Login';
+import ForgotPassword from './components/ForgotPassword';
+import DashBoard from './components/DashBoard';
+import { Notification } from './components/Notification';
+import PostComponent from './components/PostComponent';
+import AddPost from './components/AddPost';
 
-function App() {
-  let [counterVisible, setCounterVisible] = useState(true);
-
-  useEffect(function () {
-    setInterval(function () {
-      setCounterVisible(!counterVisible)
-    }, 5000)
-  }, [])
-
-
+const App = () => {
   return (
-    <>
-      hi
-      {/* {counterVisible ? <Counter></Counter> : null} */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Login />} />
+          <Route path="forgotpassword" element={<ForgotPassword />} />
+          <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/dashboard/notification" element={<Notification />} />
+          <Route path="/dashboard/postComponent" element={<AddPost />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-      {counterVisible && <Counter></Counter>}
-    </>
-  )
-}
-
-function Counter() {
-  const [count, setCount] = useState(0)
-
-  console.log("counter");
-
-
-  useEffect(function () {
-    console.log("on mount");
-
-    let clock = setInterval(function () {
-      console.log("from inside setInterval");
-
-      setCount(count => count + 1);
-    }, 1000);
-    return function () {
-      console.log("on unmount");
-
-      clearInterval(clock)
-    }
-  }, [])
-
-
-  function handleClick() {
-    setCount(count + 1);
-  }
-
-
-  return (
-    <div>
-      <h1 id="text">{count}</h1>
-      <button onClick={handleClick}>Increase Counter</button>
-    </div>
-  )
-
-}
-
-export default App
+export default App;
