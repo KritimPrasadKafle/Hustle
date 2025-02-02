@@ -1,0 +1,28 @@
+{
+  "name": "backend(api)",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bookshelf": "^1.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "knex": "^0.21.21",
+    "knx": "^2.5.4",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/bookshelf": "^1.2.9",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
