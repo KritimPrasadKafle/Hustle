@@ -1,7 +1,7 @@
 import { useWallet } from "@solana/wallet-adapter-react";
 import { useConnection } from "@solana/wallet-adapter-react";
-import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useState } from "react";
+import { LAMPORTS_PER_SOL, PublicKey, SystemProgram, Transaction } from "@solana/web3.js";
 
 export function RequestAirDrop() {
   const wallet = useWallet();
@@ -27,8 +27,7 @@ export function RequestAirDrop() {
   }
 
   return (
-    <div>
-      <br />
+    <div className="request-airdrop">
       <input
         type="number"
         placeholder="Amount"

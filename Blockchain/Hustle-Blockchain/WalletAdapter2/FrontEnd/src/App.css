@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.wallet-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wallet-button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.wallet-button:hover {
+  background-color: #357abd;
+}
+
+.components-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* RequestAirDrop Component */
+.request-airdrop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.request-airdrop input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.request-airdrop button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.request-airdrop button:hover {
+  background-color: #357abd;
+}
+
+/* ShowSolBalance Component */
+.show-sol-balance {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* SignMessage Component */
+.sign-message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sign-message input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sign-message button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sign-message button:hover {
+  background-color: #357abd;
+}
+
+/* SendTokens Component */
+.send-tokens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.send-tokens input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.send-tokens button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.send-tokens button:hover {
+  background-color: #357abd;
+}
