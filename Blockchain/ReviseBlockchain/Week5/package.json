@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@solana/wallet-adapter-react": "^0.15.35",
+    "@solana/web3.js": "^1.95.2",
+    "buffer": "^6.0.3"
+  }
+}
