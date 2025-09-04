@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Todo list</h1>
+  <div id="todos">
+    <div id="todo-1">
+      <h4>1. Take class</h4>
+      <button onclick="deleteTodo(1)">delete</button>
+    </div>
+    <div id="todo-2">
+      <h4>2. Go out to eat</h4>
+      <button onclick="deleteTodo(2)">delete</button>
+    </div>
+  </div>
+  <div>
+    <input id="inp" type="text"></input>
+    <button onclick="addTodo()">Add Todo</button>
+  </div>
+</body>
+
+<script>
+  function addTodo() {
+    const inputEl = document.getElementById("inp");
+    const textNode = document.createElement("div");
+    textNode.innerHTML = inputEl.value;
+    const parentEl = document.getElementById("todos");
+    parentEl.appendChild(textNode);
+
+  }
+</script>
+
+</html>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Todo list</h1>
+  <div id="todos">
+    <div id="todo-1">
+      <h4>1. Take class</h4>
+      <button onclick="deleteTodo(1)">delete</button>
+    </div>
+    <div id="todo-2">
+      <h4>2. Go out to eat</h4>
+      <button onclick="deleteTodo(2)">delete</button>
+    </div>
+  </div>
+  <div>
+    <input id="inp" type="text"></input>
+    <button onclick="addTodo()">Add Todo</button>
+  </div>
+</body>
+
+<script>
+  let currentIndex1 = 3;
+  function addTodo() {
+    const inputEl = document.getElementById("inp");
+    const textNode = document.createElement("div");
+    textNode.innerHTML = "<div id='todo-" + currentIndex1 + "'><h4>" + inputEl.value + '</h4><button onclick="deleteTodo(' + currentIndex + ') ">Delete</button>';
+    const parentEl = document.getElementById("todos");
+    parentEl.appendChild(textNode);
+
+    currentIndex1 = currentIndex1 + 1;
+  }
+
+  function deleteTodo(index) {
+    const element = document.getElementById("todo-" + index);
+    element.parentNode.removeChild(element);
+  }
+</script>
+
+</html>
+
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Todo List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Todo list</h1>
+  <div id="todos">
+    <div id="todo-1">
+      <h4>1. Take class</h4>
+      <button onclick="deleteTodo(1)">Delete</button>
+    </div>
+    <div id="todo-2">
+      <h4>2. Go out to eat</h4>
+      <button onclick="deleteTodo(2)">Delete</button>
+    </div>
+  </div>
+  <div>
+    <input id="inp" type="text">
+    <button onclick="addTodo()">Add Todo</button>
+  </div>
+
+  <script>
+    let currentIndex = 3;
+
+    function addTodo() {
+      const inputEl = document.getElementById("inp");
+      const todoText = inputEl.value.trim();
+
+      if (todoText === '') {
+        alert('Please enter a todo item.');
+        return;
+      }
+
+      const parentEl = document.getElementById("todos");
+
+      // Create new todo div
+      const newTodo = document.createElement('div');
+      newTodo.setAttribute("id", 'todo-' + currentIndex);
+
+      // Create new heading element
+      const newHeading = document.createElement('h4');
+      newHeading.textContent = currentIndex + '. ' + todoText;
+
+      // Create new button element
+      const newButton = document.createElement('button');
+      newButton.textContent = 'Delete';
+      newButton.setAttribute("onclick", "deleteTodo(" + currentIndex + ")");
+
+      // Append elements to the new todo div
+      newTodo.appendChild(newHeading);
+      newTodo.appendChild(newButton);
+
+      // Append new todo to the parent element
+      parentEl.appendChild(newTodo);
+
+      // Increment the index for the next todo item
+      currentIndex++;
+
+      // Clear the input field
+      inputEl.value = '';
+    }
+
+    function deleteTodo(index) {
+      const element = document.getElementById("todo-" + index);
+      if (element) {
+        element.parentNode.removeChild(element);
+      }
+    }
+  </script>
+</body>
+
+</html>
+<body>
+  <div id="root"></div>
+  <div>
+    <input type="text"></input>
+    <button onclick="addTodo()">Add Todo</button>
+  </div>
+  <script>
+    let ctr = 2;
+    let todos = [{
+      id: 1,
+      title: "Go to gym"
+    }, {
+      id: 2,
+      title: "Clean the car"
+    }]
+
+    function addTodo() {
+      todos.push({
+        id: ctr,
+        title: document.querySelector("input").value
+      })
+      render(todos);
+    }
+
+    function render(todos) {
+      const todoList = document.getElementById('root');
+      todoList.innerHTML = ''; // Clear the list
+
+      todos.forEach(todo => {
+        const div = document.createElement('div');
+        const h1 = document.createElement('h4');
+        h1.textContent = todo.title;
+        div.appendChild(h1);
+        div.setAttribute('data-id', todo.id);
+        todoList.appendChild(div);
+      });
+    }
+    render(todos)
+  </script>
+</body>
+
+
+<body>
+  <input type="text"></input>
+  <button onclick="addTodo()">Add todo!</button>
+
+  <button onclick="deleteLastTodo()">Delete last todo</button>
+
+  <button onclick="deleteFirstTodo()">Delete first todo</button>
+  <div id="todos"></div>
+  <script>
+    let todos1 = [];
+    function addTodo() {
+      todos1.push({
+        title: document.querySelector("input").value
+      })
+      render()
+    }
+
+    function deleteLastTodo() {
+      todos1.splice(todos1.length - 1, 1) // remove the last element from the arr
+      render()
+    }
+
+
+    function deleteFirstTodo() {
+      todos1.splice(0, 1) // remove the last element from the arr
+      render()
+    }
+
+
+    function createTodoComponent(todo) {
+      const div = document.createElement("div");
+      const h1 = document.createElement("h1");
+      const button = document.createElement("button");
+      button.innerHTML = "Delete"
+      h1.innerHTML = todo.title;
+      div.append(h1)
+      div.append(button)
+      return div
+    }
+
+    // react 
+    function render() {
+      document.querySelector("#todos").innerHTML = "";
+      for (let i = 0; i < todos1.length; i++) {
+        const element = createTodoComponent(todos[i]);
+        document.querySelector("#todos").appendChild(element)
+      }
+    }
+
+  </script>
+</body>
