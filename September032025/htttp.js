@@ -1,8 +1,20 @@
 const express = require('express');
+const cors = require("cors");
 
 const app = express();
+app.use(cors());
+
+
+app.use(function(req, res, next){
+    req.name = "kritim"
+    console.log("request received");
+    next();
+    
+} )
 
 app.get('/multiply', async function(req, res){
+    console.log(req.name);
+    
     const inputA = req.query.a;
     const inputB = req.query.b;
 
@@ -51,6 +63,16 @@ app.get('/subtract', async function(req, res){
     })
 })
 
+
+
+function logRequest(req, res, next){
+    console.log('Request made to: ${req.url}');
+    next();
+}
+
+app.get('/special', logRequest, (req, res) => {
+    res.send('This route uses route-specific middleware!');
+})
 
 app.listen(3000, () => {
     console.log('Server is up and running');
