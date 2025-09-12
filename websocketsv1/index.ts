@@ -36,6 +36,11 @@ const httpServer = app.listen(8080)
 
 const wss = new WebSocketServer({ server: httpServer });
 
+function hello(){
+  console.log("Check");
+  
+}
+
 wss.on('connection', function connection(ws) {
   ws.on('error', console.error);
 
