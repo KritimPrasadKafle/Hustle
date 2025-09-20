@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        :root {
+            --main-color: blue;
+            --accent-color: orange;
+            --bg-color: yellow;
+        }
+        body{
+            text-align: center;
+            background-color: palegoldenrod;
+            font-family: 'Times New Roman', Times, serif;
+            background: linear-gradient(45deg, lightblue, pink);
+            min-height:100vh;
+        }
+        h1{
+            color: blue;
+            font-size: 48px;
+        }
+        p{
+            color: green;
+        }
+        button{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px 20px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px gray;
+            border: none;
+            cursor: move;
+
+        }
+        button:hover{
+            background-color: white;
+            color: black;
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px darkgray;
+        }
+        .profile{
+            margin: 20px;
+            font-size: 80px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            text-align: center;
+            background-color: white;
+            line-height: 120px;
+            border: 5px solid orange;
+            transition: all 0.3s;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse{
+            0% {
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        .profile:hover{
+            background-color: aquamarine;
+            transform: rotate(15deg);
+
+        }
+        .container{
+            background-color: white;
+            max-width: 500px;
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 20px;
+        }
+        .list{
+            list-style: none;
+            line-height: 40px;
+            text-align: left;
+        }
+        .list li{
+            /* border:2px solid red; */
+            background-color: lightblue;
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 18px;
+            
+        }
+        .list li:hover{
+            background-color: orange;
+            transform: translateX(10px);
+            box-shadow: 0 4px 8px gray;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    <h1>Welcome to my website
+    </h1>
+    <div class="profile">🚀</div>
+    <p>This is a paragraph</p>
+    <h2>My favorite things</h2>
+    <ul class="list">
+        <li>Playing games</li>
+        <li>Learning new things</li>
+        <li>Coding websites</li>
+        <li>Being creative</li>
+    </ul>
+    <button>Click ME</button>
+
+    
+   </div>
+</body>
+</html>
