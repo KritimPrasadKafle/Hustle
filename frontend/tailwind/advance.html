@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Display</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: lightblue;
+        }
+        
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        
+        .block-demo .box {
+            display: block;
+        }
+        
+        .inline-demo .box {
+            display: inline-block;
+        }
+        
+        .flex-demo {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            background: lightgray;
+            border-radius: 10px;
+        }
+        
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .none-demo .box {
+            display: none;
+        }
+        
+        .none-demo .box:hover {
+            display: block;
+        }
+        
+        .hidden-box {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>🏗️ Learning Display Property</h1>
+    
+    <div class="container">
+        <h2>📦 Display: Block (Default for divs)</h2>
+        <p>Each box takes up the full width and stacks vertically:</p>
+        <div class="block-demo">
+            <div class="box red">Box 1</div>
+            <div class="box blue">Box 2</div>
+            <div class="box green">Box 3</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>➡️ Display: Inline-Block</h2>
+        <p>Boxes sit side by side horizontally:</p>
+        <div class="inline-demo">
+            <div class="box red">Box 1</div>
+            <div class="box blue">Box 2</div>
+            <div class="box green">Box 3</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>🔧 Display: Flex (Modern Layout)</h2>
+        <p>Smart horizontal layout with equal spacing:</p>
+        <div class="flex-demo">
+            <div class="box red">Box 1</div>
+            <div class="box blue">Box 2</div>
+            <div class="box green">Box 3</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>🎯 Flex: Center Everything</h2>
+        <p>Perfect centering (horizontal AND vertical):</p>
+        <div class="flex-center">
+            <div class="box red">Centered!</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>⬇️ Flex: Column Direction</h2>
+        <p>Flex can also stack vertically:</p>
+        <div class="flex-column">
+            <div class="box red">Top</div>
+            <div class="box blue">Middle</div>
+            <div class="box green">Bottom</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>👻 Display: None (Invisible!)</h2>
+        <p>Hover over this area to reveal the hidden box:</p>
+        <div class="none-demo">
+            <div class="box hidden-box">I'm Hidden!</div>
+        </div>
+    </div>
+</body>
+</html>

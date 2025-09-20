@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning Position</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            background: linear-gradient(45deg, lightblue, lightgreen);
+            margin: 0;
+            min-height: 200vh; /* Make page scrollable */
+        }
+        
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            position: relative; /* Important for absolute positioning inside */
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .red { background-color: red; }
+        .blue { background-color: blue; }
+        .green { background-color: green; }
+        .purple { background-color: purple; }
+        .orange { background-color: orange; }
+        
+        /* Static - Default position */
+        .static-box {
+            position: static;
+            margin: 10px;
+        }
+        
+        /* Relative - Move from normal position */
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 50px;
+            margin: 10px;
+        }
+        
+        /* Absolute - Position anywhere inside parent */
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        /* Fixed - Stays in same spot when scrolling */
+        .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .fixed-box:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Sticky - Sticks when scrolling past it */
+        .sticky-box {
+            position: sticky;
+            top: 10px;
+            margin: 10px;
+            background-color: gold;
+            color: black;
+        }
+        
+        /* Demo areas */
+        .relative-demo {
+            border: 3px dashed gray;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .absolute-demo {
+            border: 3px dashed red;
+            padding: 20px;
+            margin: 20px 0;
+            height: 200px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Learning Position Property</h1>
+    
+    <div class="container">
+        <h2>📍 Position: Static (Default)</h2>
+        <p>Normal flow - elements stack naturally:</p>
+        <div class="box red static-box">Static 1</div>
+        <div class="box blue static-box">Static 2</div>
+    </div>
+    
+    <div class="container">
+        <h2>↗️ Position: Relative</h2>
+        <p>Move from normal position (see the dashed outline of original space):</p>
+        <div class="relative-demo">
+            <div class="box red static-box">Normal</div>
+            <div class="box blue relative-box">Moved!</div>
+            <div class="box green static-box">Normal</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>🎯 Position: Absolute</h2>
+        <p>Position anywhere inside the red dashed parent container:</p>
+        <div class="absolute-demo">
+            <div class="box red static-box">Normal Box</div>
+            <div class="box purple absolute-box">I'm Free!</div>
+            <p>The purple box is positioned in the top-right corner of this red container!</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>📌 Position: Sticky</h2>
+        <p>This gold box will stick to the top when you scroll past it:</p>
+        <div class="box sticky-box">Sticky!</div>
+        <p>Scroll down and watch the gold box stick to the top of the screen!</p>
+    </div>
+    
+    <!-- Fixed position box -->
+    <div class="box orange fixed-box">Fixed!</div>
+    
+    <!-- More content to make page scrollable -->
+    <div class="container">
+        <h2>⬇️ Scroll Test Area</h2>
+        <p>Keep scrolling to see position effects!</p>
+        <div style="height: 300px; background: lightcoral; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+            Notice the orange "Fixed!" box stays in the same spot!
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>🎊 More Scroll Content</h2>
+        <p>The fixed box follows you everywhere!</p>
+        <div style="height: 300px; background: mediumpurple; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px;">
+            And the gold sticky box should be stuck at the top!
+        </div>
+    </div>
+</body>
+</html>
